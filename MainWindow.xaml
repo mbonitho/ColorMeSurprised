@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfTraining.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Color me surprised !" Height="480" Width="640" KeyDown="Window_KeyDown" Background="#FFABABAB" ResizeMode="NoResize" Icon="/ColorMeSurprised;component/icon.ico">
+    <Grid Name="mainGrid">
+        <Rectangle Height="64" HorizontalAlignment="Left" Margin="149,112,0,0" Name="player" Stroke="{x:Null}" VerticalAlignment="Top" Width="24" Fill="Black"></Rectangle>
+
+        <Rectangle x:Name="lblR" Fill="Red" Width="50" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20, 20, 0, 0"/>
+        <Rectangle x:Name="lblG" Fill="Lime"  Width="50" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20, 170, 0, 0"/>
+        <Rectangle x:Name="lblB" Fill="Blue"  Width="50" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20, 320, 0, 0"/>
+        <Ellipse Height="33" HorizontalAlignment="Left" Margin="270,424,0,0" Name="exit2" Stroke="{x:Null}" VerticalAlignment="Top" Width="171" Stretch="Fill" />
+        <Ellipse Height="33" HorizontalAlignment="Left" Margin="93,424,0,0" Name="exit1" Stroke="{x:Null}" VerticalAlignment="Top" Width="171" Stretch="Fill" />
+        <Ellipse Height="33" HorizontalAlignment="Left" Margin="447,424,0,0" Name="exit3" Stroke="{x:Null}" VerticalAlignment="Top" Width="171" Stretch="Fill" />
+        <Label Content="PAUSE" Height="auto" HorizontalAlignment="Left" Margin="237,190,0,0" Name="lblPause" VerticalAlignment="Top" FontSize="40" FontWeight="Black" FontStretch="ExtraExpanded" Width="auto" Visibility="Hidden" Panel.ZIndex="100" />
+        <Label Content="Score : 0" Height="auto" HorizontalAlignment="Right" Margin="0" Name="lblScore" VerticalAlignment="Top" FontFamily="Consolas" FontWeight="Bold" FontSize="18" Panel.ZIndex="100" />
+    </Grid>
+</Window>
